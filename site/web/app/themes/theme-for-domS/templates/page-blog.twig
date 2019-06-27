@@ -1,0 +1,29 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+
+
+	<section class="grey-background p-md-top p-md-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h1>Personal Blog</h1><br>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="grey-background p-md-bottom">
+		<div class="d-flex w-100 ">
+			
+                {% for post in posts %}
+                    {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                {% endfor %}
+			</div>
+	
+	</section>
+
+
+{% endblock %}

@@ -1,0 +1,38 @@
+{% extends "base.twig" %}
+
+{% block content %}
+	<style>
+		.pagination-hide {
+			display:none;
+		}
+	</style>
+    
+	<section class="grey-background p-md-top p-md-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12 text-center">
+					<h1>Persons Blog</h1><br>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="grey-background p-md-bottom">
+		<div class="container test">
+			<div class="row">
+
+                {% for post in posts %}
+                    {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                {% endfor %}
+			</div><br>
+			<div class="text-center">
+				<a href="#" class="btn btn btn-outline-primary text-center" id="loadMore">Load More</a>
+                {% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
+			</div>
+		</div>
+	</section>
+
+	
+	
+{% endblock %}

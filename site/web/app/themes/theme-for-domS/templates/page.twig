@@ -1,0 +1,29 @@
+{% extends "base.twig" %}
+
+{% block content %}
+
+<section class="p-md-top p-md-bottom top-section" style="margin-top: 50px"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-xs-center d-none d-sm-block">
+                   <img src="{{ TimberImage(post.get_field('header_image')).src|default(site.theme.link ~ '/imgs/header_new.png')  }}" class="img-fluid" height="100px" alt="">
+                </div>
+                    
+               
+            </div>
+        </div>
+    </section>
+        
+
+<section class="p-md-top p-md-bottom top-section" style="margin-top: 50px"> 
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-xs-center d-none d-sm-block">
+                   <div class="parallax"></div>
+                </div>
+                    
+               
+            </div>
+        </div>
+    </section>
+{% endblock %}
