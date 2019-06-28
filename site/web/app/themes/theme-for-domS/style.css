@@ -430,9 +430,7 @@ Main components
   border: 0.5px solid #6c757d;
   color: #6c757d!important;
 }
-footer{
-  padding-top: 20rem;
-}
+
 .wpcf7-submit:hover{
   background-color: var(--main-color);
   border: 0.5px solid #6c757d;
