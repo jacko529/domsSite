@@ -3,7 +3,7 @@
   <div class="thumbnail">  
     <div class="cropper">
 		{% if post.get_thumbnail %}
-			<div class="cropper-bg " data-src="{{ post.thumbnail.src }}"></div>
+			<div class="cropper-bg " style="display: block; background-image: url("{{ post.thumbnail.src }}");"</div>
 			<div class="title-tease"><h3>{{ post.title }}</h3></div>
 			<div class="author-tease"><p>{{ post.author.name }}</p></div>
 			<div class="bottom-blog"><p>{{ post.date('j. F Y') }}</p></div>
