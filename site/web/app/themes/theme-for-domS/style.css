@@ -102,7 +102,100 @@ body {
   font-size: 100%;
   font-family: "Corporate S W01";
 }
-
+.bottom-blog {
+  position: absolute;
+  top: 77%;
+  padding-left: 4px;
+  color: var(--main-black);
+  background-color: var(--main-txt-color);
+  }
+  
+  .navbar > ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    font-family: arial;
+    padding: 0.4rem 0.7rem;
+    background: linear-gradient(to right, transparent 50%, white 50%);
+    background-size: 200% 100%;
+    background-position: left bottom;
+    transition: all 0.3s;
+    background-color: black;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+  }
+  
+  .midblue .navbar > ul li a,
+  .lightblue .navbar > ul li a,
+  .emerald .navbar > ul li a,
+  .blue .navbar > ul li a,
+  .green .navbar > ul li a,
+  .red .navbar > ul li a{
+      text-decoration: none;
+      cursor: pointer;
+      font-family: arial;
+      padding: 0.4rem 0.7rem;
+      background: linear-gradient(to right, transparent 50%, white 50%);
+      background-size: 200% 100%;
+      background-position: left bottom;
+      transition: all 0.3s;
+      background-color: black;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position: relative;
+  }
+  .midblue .navbar > ul li a::after,
+  .lightblue .navbar > ul li a::after,
+  .emerald .navbar > ul li a::after,
+  .blue .navbar > ul li a::after,
+  .green .navbar > ul li a::after,
+  .red .navbar > ul li a::after{
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to right, transparent 51%, black 49%);
+      background-size: 200% 100%;
+      background-position: left bottom;
+      transition: all 0.3s;
+  }
+  
+  .navbar > ul li a{
+      text-decoration: none;
+      cursor: pointer;
+      font-family: arial;
+      padding: 0.4rem 0.7rem;
+      background: linear-gradient(to right, transparent 50%, white 50%);
+      background-size: 200% 100%;
+      background-position:left bottom;
+      transition: all 0.3s; 
+      background-color: black;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      position:relative;
+    }
+    .navbar > ul li a::after{
+      content: "";
+      z-index: -1;
+      position: absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: linear-gradient(to right, transparent 51%, black 49%);
+      background-size: 200% 100%;
+      background-position:left bottom;
+      transition: all 0.3s; 
+      
+    }
+    .navbar > ul li a:hover,
+    .navbar > ul li a:hover::after{
+      background-position:right bottom;
+    }
+    
 a {
   color: #79b6e4;
   text-decoration: none;
@@ -570,97 +663,3 @@ color: var(--main-black);
 background-color: var(--main-color);
 }
 
-.bottom-blog {
-position: absolute;
-top: 77%;
-padding-left: 4px;
-color: var(--main-black);
-background-color: var(--main-txt-color);
-}
-
-.navbar > ul li a {
-  text-decoration: none;
-  cursor: pointer;
-  font-family: arial;
-  padding: 0.4rem 0.7rem;
-  background: linear-gradient(to right, transparent 50%, white 50%);
-  background-size: 200% 100%;
-  background-position: left bottom;
-  transition: all 0.3s;
-  background-color: black;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  position: relative;
-}
-
-.midblue .navbar > ul li a,
-.lightblue .navbar > ul li a,
-.emerald .navbar > ul li a,
-.blue .navbar > ul li a,
-.green .navbar > ul li a,
-.red .navbar > ul li a{
-    text-decoration: none;
-    cursor: pointer;
-    font-family: arial;
-    padding: 0.4rem 0.7rem;
-    background: linear-gradient(to right, transparent 50%, white 50%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    transition: all 0.3s;
-    background-color: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: relative;
-}
-.midblue .navbar > ul li a::after,
-.lightblue .navbar > ul li a::after,
-.emerald .navbar > ul li a::after,
-.blue .navbar > ul li a::after,
-.green .navbar > ul li a::after,
-.red .navbar > ul li a::after{
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to right, transparent 51%, black 49%);
-    background-size: 200% 100%;
-    background-position: left bottom;
-    transition: all 0.3s;
-}
-
-.navbar > ul li a{
-    text-decoration: none;
-    cursor: pointer;
-    font-family: arial;
-    padding: 0.4rem 0.7rem;
-    background: linear-gradient(to right, transparent 50%, white 50%);
-    background-size: 200% 100%;
-    background-position:left bottom;
-    transition: all 0.3s; 
-    background-color: black;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position:relative;
-  }
-  .navbar > ul li a::after{
-    content: "";
-    z-index: -1;
-    position: absolute;
-    top:0;
-    left:0;
-    width:100%;
-    height:100%;
-    background: linear-gradient(to right, transparent 51%, black 49%);
-    background-size: 200% 100%;
-    background-position:left bottom;
-    transition: all 0.3s; 
-    
-  }
-  .navbar > ul li a:hover,
-  .navbar > ul li a:hover::after{
-    background-position:right bottom;
-  }
-  
