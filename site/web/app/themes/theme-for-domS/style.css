@@ -483,13 +483,13 @@ Main components
   display: flex;
   justify-content: center;
   padding: 1rem;
-  background-color: var(--main-bg-color)
+  background-color: var(--main-bg-color);
 }
 .quoteNow{
   display: flex;
   justify-content: center;
   padding: 1rem;
-  background-color: var(--main-txt-color)
+  background-color: var(--main-txt-color);
 }
 
 .quoteN
