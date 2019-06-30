@@ -6,17 +6,16 @@
         style="
             background-image: url( {{  post.thumbnail.src }} )!important;
             justify-content: center!important;
-            min-height: 80vh!important;
+            min-height: 40vh!important;
             color:black;
         ">
-        			<img src="{{ post.thumbnail.src|resize(1200, 300) }}">
 
     <div class="container mb-4">
-       <h1> {{ post.title }} </h1>
+       <h1 "quotetitle"> {{ post.title }} </h1>
     </div>
     <div class="container">
-       <p > {{ post.author.name }} </p>
-       <p > {{ post.date('j. F Y') }} </p>
+       <p "quoteNow"> {{ post.author.name }} </p>
+       <p "quoteNow"> {{ post.date('j. F Y') }} </p>
 
     </div>
 </a>
