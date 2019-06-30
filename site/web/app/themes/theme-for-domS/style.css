@@ -554,6 +554,7 @@ Main components
 .carousel-inner img {
   width: 100%;
   height: 100%;
+  border-radius: 90%;
 }
 
 .thumbnail {
