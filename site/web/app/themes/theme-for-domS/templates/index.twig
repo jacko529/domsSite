@@ -1,38 +1,31 @@
 {% extends "base.twig" %}
 
 {% block content %}
-	<style>
-		.pagination-hide {
-			display:none;
-		}
-	</style>
-    
-	<section class="grey-background p-md-top p-md-bottom">
-		<div class="container">
-			<div class="row">
-				<div class="col-sm-12 text-center">
-					<h1>Persons Blog</h1><br>
-				</div>
+			<div id="blog-page">
+                    {% for post in posts %}
+                       {% if loop.first %}
+                             {% include '/page-hero-blog.twig' %}
+                        {% endif %}
+                    {% endfor %}
 
-			</div>
-		</div>
-	</section>
+                <section style=" color: #1E1E1E; padding: 3rem 0rem">
+					<div class="container d-flex  align-items-center category-section" style="justify-content: space-between; ">
+                        <div class="search-wrapper">
+                                <div class="search-wrapper">
+                                    {{function('get_search_form')}}
+                                </div>
+                        </div>
+                    </div>
+                </section>
+                <div id="all-posts" class="container cat-posts align-items-center container-blog">
+                    {% for post in posts %}
+                            {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
+                    {% endfor %}
+                </div>
+            </div>
 
-	<section class="grey-background p-md-bottom">
-		<div class="container test">
-			<div class="row">
+                                    <script>console.log('categories: ',{{ images|json_encode|raw }})</script>
 
-                {% for post in posts %}
-                    {% include ['tease-'~post.post_type~'.twig', 'tease.twig'] %}
-                {% endfor %}
-			</div><br>
-			<div class="text-center">
-				<a href="#" class="btn btn btn-outline-primary text-center" id="loadMore">Load More</a>
-                {% include 'partial/pagination.twig' with { pagination: posts.pagination({show_all: false, mid_size: 3, end_size: 2}) } %}
-			</div>
-		</div>
-	</section>
-
-	
-	
 {% endblock %}
+
+

@@ -483,12 +483,13 @@ Main components
   display: flex;
   justify-content: center;
   padding: 1rem;
+  color: var(--main-color);
   background-color: var(--main-bg-color);
 }
 .quoteNow{
   display: flex;
   justify-content: center;
-  padding: 1rem;
+  color: var(--main-color);
   background-color: var(--main-txt-color);
 }
 
@@ -501,7 +502,7 @@ Main components
   -webkit-transition:-webkit-transform .6s ease .1s;
 }
 .linkfooter{
-  color:black;
+  color:var(--main-color);
 }
 .cropper .cropper-bg{
   background-position: center;
