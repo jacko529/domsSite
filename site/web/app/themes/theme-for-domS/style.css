@@ -473,6 +473,26 @@ Main components
 .search-wrapper label{
   display: none;
 }
+.carousel-caption {
+
+  right: 25%!important;
+  left: 25%!important;
+
+}
+.quotetitle{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--main-bg-color)
+}
+.quoteNow{
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  background-color: var(--main-txt-color)
+}
+
+.quoteN
 .cropper img{
   height: -webkit-fill-available;
   width:100%;
@@ -480,7 +500,9 @@ Main components
   transition: transform .6s ease .1s; 
   -webkit-transition:-webkit-transform .6s ease .1s;
 }
-
+.linkfooter{
+  color:black;
+}
 .cropper .cropper-bg{
   background-position: center;
   background-size: cover;
