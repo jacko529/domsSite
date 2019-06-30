@@ -464,7 +464,7 @@ Main components
 
 .title {
   display: inline-block;
-  background: var(--main-yellow);
+  background: var(--main-color);
   padding: 0 20px;
   position: absolute;
   top: 45%;
@@ -607,8 +607,8 @@ Main components
   max-width: 80%;
   padding-left: 4px;
   font-size: 30px;
-  color: var(--main-bg-color);
-  background-color: var(--main-txt-color);
+  color: var(--main-color);
+  background-color: black;
 }
 #hero {
   position: relative;
