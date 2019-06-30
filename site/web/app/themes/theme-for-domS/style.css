@@ -9,7 +9,7 @@ body, html{
     overflow-x:hidden;
 
 }
-.navbar > ul li a::after{
+.navbar-nav > li a::after{
   content: "";
   z-index: -1;
   position: absolute;
@@ -23,8 +23,10 @@ body, html{
   transition: all 0.3s; 
   
 }
-.navbar > ul li a:hover,
-.navbar > ul li a:hover::after{
+
+
+.navbar-nav > li a:hover,
+.navbar-nav >  li a:hover::after{
   background-position:right bottom;
 }
 
@@ -154,7 +156,7 @@ body {
   background-color: var(--main-color);
   }
   
-  .navbar > ul li a {
+  .navbar-nav > li a {
     text-decoration: none;
     cursor: pointer;
     font-family: arial;
