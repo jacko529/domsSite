@@ -469,6 +469,10 @@ Main components
     position: relative;
     overflow: hidden;
 }
+
+.search-wrapper label{
+  display: none;
+}
 .cropper img{
   height: -webkit-fill-available;
   width:100%;

@@ -1,0 +1,20 @@
+
+<a 
+        href="{{ post.link }}" 
+        id="hero" 
+        class="{{ post.meta('page_color') }}"
+        style="
+            background-image: url( {{  post.thumbnail.src }} )!important;
+            justify-content: center!important;
+            min-height: 80vh!important;
+            color:black;
+        ">
+    <div class="container mb-4">
+       <h1> {{ post.title }} </h1>
+    </div>
+    <div class="container">
+       <p > {{ post.author.name }} </p>
+       <p > {{ post.date('j. F Y') }} </p>
+
+    </div>
+</a>
