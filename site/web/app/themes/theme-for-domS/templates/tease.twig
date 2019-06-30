@@ -3,7 +3,12 @@
   <div class="thumbnail">  
     <div class="cropper">
 		{% if post.get_thumbnail %}
-			<div class="cropper-bg lazy" data-src="{{ post.thumbnail.src }}"></div>
+			<div class="cropper-bg lazy"  style="
+            background-image: url( {{  post.thumbnail.src }} )!important;
+            justify-content: center!important;
+            min-height: 80vh!important;
+            color:black;
+        "></div>
 			<div class="title-tease"><h3>{{ post.title }}</h3></div>
 			<div class="author-tease"><p>{{ post.author.name }}</p></div>
 			<div class="bottom-blog"><p>{{ post.date('j. F Y') }}</p></div>
