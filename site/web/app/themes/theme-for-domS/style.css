@@ -510,6 +510,15 @@ Main components
   align-items: flex-start;
   flex-direction: column;
 }
+.title-tease {
+  position: absolute;
+  top: 40%;
+  max-width: 80%;
+  padding-left: 4px;
+  font-size: 30px;
+  color: var(--main-bg-color);
+  background-color: var(--main-txt-color);
+}
 #hero {
   position: relative;
   display: flex;
