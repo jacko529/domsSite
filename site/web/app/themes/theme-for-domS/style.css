@@ -9,7 +9,7 @@ body, html{
     overflow-x:hidden;
 
 }
-.navbar-nav > li a::after{
+.nav-link::after{
   content: "";
   z-index: -1;
   position: absolute;
@@ -171,12 +171,7 @@ body {
     position: relative;
   }
   
-  .midblue .navbar > ul li a,
-  .lightblue .navbar > ul li a,
-  .emerald .navbar > ul li a,
-  .blue .navbar > ul li a,
-  .green .navbar > ul li a,
-  .red .navbar > ul li a{
+.nav-link{
       text-decoration: none;
       cursor: pointer;
       font-family: arial;
@@ -190,12 +185,8 @@ body {
       -webkit-text-fill-color: transparent;
       position: relative;
   }
-  .midblue .navbar > ul li a::after,
-  .lightblue .navbar > ul li a::after,
-  .emerald .navbar > ul li a::after,
-  .blue .navbar > ul li a::after,
-  .green .navbar > ul li a::after,
-  .red .navbar > ul li a::after{
+
+  .red .nav-link::after{
       content: "";
       z-index: -1;
       position: absolute;
@@ -209,7 +200,7 @@ body {
       transition: all 0.3s;
   }
   
-  .navbar > ul li a{
+ .nav-link{
       text-decoration: none;
       cursor: pointer;
       font-family: arial;
