@@ -486,6 +486,10 @@ Main components
   color: var(--main-txt-color);
   background-color: var(--main-color);
 }
+.blackColour{
+  text-transform: uppercase!important;
+
+}
 .nav-link{
   text-transform: uppercase!important;
   font-family: 'Poppins', sans-serif!important;
