@@ -473,20 +473,18 @@ Main components
 
 .author {
   display: inline-block;
-  background: var(--main-yellow);
+  background: var(--main-color);
   padding: 0 20px;
   position: absolute;
   top: 68%;
-  color: black;
+  color: var(--main-txt-color);
 }
 
 .bottom-blog {
   display: inline-block;
-  background: var(--main-yellow);
-  padding: 0 20px;
-  position: absolute;
+  background: var(--main-color);
   top: 80%;
-  color: black;
+  color: var(--main-txt-color);
 }
 
 .wpcf7-form-control .wpcf7-submit{
