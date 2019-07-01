@@ -1,10 +1,40 @@
+
 {% if menu %}
-<ul class="navbar-nav mx-auto text-center">
-		{% for item in menu %}
-		<li class="{{ item.classes | join(' ') }} nav-item">
-			<a target="{{ item.target }}" class="nav-link" href="{{ item.link }}">{{ item.title }}</a>
+	<ul>
+	{% for item in menu %}
+		<li class="{{ item.classes | join(' ') }}">
+			<a 
+				class="{{ post.meta('text_color') }}"
+				target="{{ item.target }}" 
+				href="{{ item.link }}"
+			>
+					{{ item.title }}</a>
 			{% include "menu.twig" with {'menu': item.children} %}
 		</li>
 	{% endfor %}
 	</ul>
+	<button class="hamburger hamburger--slider" type="button">
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+	<div class="overlay">
+		<ul>
+			{% for item in menu %}
+				<li class="{{ item.classes | join(' ') }}">
+					<a 
+						{# class="{{ post.meta('text_color') }}" #}
+						target="{{ item.target }}" 
+						href="{{ item.link }}"
+					>
+							{{ item.title }}</a>
+					{% include "menu.twig" with {'menu': item.children} %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
 {% endif %}
+
+
+
+
