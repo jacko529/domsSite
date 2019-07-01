@@ -4,7 +4,7 @@
 	{% for item in menu %}
 		<li class="{{ item.classes | join(' ') }}">
 			<a 
-				class="{{ post.meta('text_color') }}"
+				class="nav-link"
 				target="{{ item.target }}" 
 				href="{{ item.link }}"
 			>
