@@ -718,3 +718,67 @@ background-color: var(--main-color);
 .red .hamburger .hamburger-inner::after{
     background-color: var(--main-white)!important;
 }
+
+
+.overlay{
+  display: none!important;
+  z-index: 10;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width:0vw;
+  transform: translateX(100px);
+  height: 100vh;
+  background: var(--main-black);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.overlay.translate{
+  transform: translateX(0px);
+}
+
+.overlay.is-open{
+  width: 100vw;
+}
+
+
+.overlay ul {
+  display: flex;
+  align-items: center;
+  margin: 0!important;
+  flex-direction: column;
+}
+
+.overlay ul li{
+  margin: 1rem 0;
+  font-size: 23px;
+  transition: all 0.2s ease; 
+  text-decoration: none;
+  cursor: pointer;
+  font-family: arial;
+  background: linear-gradient(to right, transparent 50%, white 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position:relative;
+}
+.no-delay{
+  transition-delay:0s!important;
+}
+
+.delay{
+  transition-delay:0.2s!important;
+}
+
+.overlay ul li.is-shown{
+  background-position:right bottom;
+}
+
+.overlay ul li a{
+  color: var(--main-white)!important;
+
+}
