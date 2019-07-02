@@ -18,20 +18,26 @@
 		        <a class="navbar-text blackColour" href="/contact">Get In Touch +</a>
 
 	</div>
-	<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <a href="#">About</a>
-    <a href="#">Services</a>
-    <a href="#">Clients</a>
-    <a href="#">Contact</a>
-  </div>
-</div>
-
-<h2>Fullscreen Overlay Nav Example</h2>
-<p>Click on the element below to open the fullscreen overlay navigation menu.</p>
-<p>In this example, the navigation menu will slide in, from left to right:</p>
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+	<button class="hamburger hamburger--slider" type="button">
+		<span class="hamburger-box">
+			<span class="hamburger-inner"></span>
+		</span>
+	</button>
+	<div class="overlay">
+		<ul>
+			{% for item in menu %}
+				<li class="{{ item.classes | join(' ') }}">
+					<a 
+						{# class="{{ post.meta('text_color') }}" #}
+						target="{{ item.target }}" 
+						href="{{ item.link }}"
+					>
+							{{ item.title }}</a>
+					{% include "menu.twig" with {'menu': item.children} %}
+				</li>
+			{% endfor %}
+		</ul>
+		</div>
 {% endif %}
 
 
