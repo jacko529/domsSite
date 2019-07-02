@@ -478,9 +478,17 @@ body {
   text-transform: uppercase!important;
   font-family: 'Poppins', sans-serif!important;
 }
-.wpcf7-form-control .wpcf7-submit{
+.wpcf7-form-control {
+  width: 100%;
+  border-radius: 0px;
+
+  background: var(--main-bg-color);
+
+}
+.wpcf7-submit{
   width: 30%;
   border-radius: 0px;
+
   background: var(--main-bg-color);
 
 }
@@ -773,3 +781,164 @@ background-color: var(--main-color);
   color: var(--main-white)!important;
 
 }
+
+
+
+
+
+
+
+
+ul {
+  list-style: none;
+  text-transform: uppercase;
+}
+header nav ul{
+  display: flex;
+  align-items: center;
+  margin: 0!important;
+}
+header nav ul li {
+  margin: 0 0 0 30px;
+  font-size: 0.9rem;
+}
+
+header nav ul li a:hover,
+header nav ul li a{
+  color: var(--main-black)!important;
+}
+
+header{
+  padding: 1rem 0;
+  background: var(--main-yellow);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+.navbar-brand img,
+.navbar-brand svg{
+  transform: translateY(-6px);
+  width: 100px;
+  height:50px;
+}
+.hamburger{
+  display: none!important;
+  padding: 15px 0px 7px 0;
+}
+.color-link{
+  color: var(--main-black);
+}
+.hamburger-inner, 
+.hamburger-inner::before, 
+.hamburger-inner::after{    
+  border-radius: 0!important;
+  background-color: var(--main-black);
+}
+.hamburger.is-active .hamburger-inner, 
+.hamburger.is-active .hamburger-inner::before, 
+.hamburger.is-active .hamburger-inner::after{
+  border-radius: 0!important;
+  background-color: var(--main-white)!important;
+}
+.midblue .hamburger .hamburger-inner,
+.midblue .hamburger .hamburger-inner::before,
+.midblue .hamburger .hamburger-inner::after,
+.lightblue .hamburger .hamburger-inner,
+.lightblue .hamburger .hamburger-inner::before,
+.lightblue .hamburger .hamburger-inner::after,
+.emerald .hamburger .hamburger-inner,
+.emerald .hamburger .hamburger-inner::before,
+.emerald .hamburger .hamburger-inner::after,
+.blue .hamburger .hamburger-inner,
+.blue .hamburger .hamburger-inner::before,
+.blue .hamburger .hamburger-inner::after,
+.green .hamburger .hamburger-inner,
+.green .hamburger .hamburger-inner::before,
+.green .hamburger .hamburger-inner::after,
+.red .hamburger .hamburger-inner,
+.red .hamburger .hamburger-inner::before,
+.red .hamburger .hamburger-inner::after{
+  background-color: var(--main-white)!important;
+}
+.midblue .navbar-brand svg path,
+.lightblue .navbar-brand svg path,
+.emerald .navbar-brand svg path,
+.blue .navbar-brand svg path,
+.green .navbar-brand svg path,
+.red .navbar-brand svg path{
+  fill: var(--main-white)!important;
+}
+
+.midblue .navbar > ul li a,
+.lightblue .navbar > ul li a,
+.emerald .navbar > ul li a,
+.blue .navbar > ul li a,
+.green .navbar > ul li a,
+.red .navbar > ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  font-family: arial;
+  padding: 0.4rem 0.7rem;
+  background: linear-gradient(to right, transparent 50%, white 50%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 0.3s;
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position: relative;
+}
+.midblue .navbar > ul li a::after,
+.lightblue .navbar > ul li a::after,
+.emerald .navbar > ul li a::after,
+.blue .navbar > ul li a::after,
+.green .navbar > ul li a::after,
+.red .navbar > ul li a::after{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent 51%, black 49%);
+  background-size: 200% 100%;
+  background-position: left bottom;
+  transition: all 0.3s;
+}
+
+.navbar > ul li a{
+  text-decoration: none;
+  cursor: pointer;
+  font-family: arial;
+  padding: 0.4rem 0.7rem;
+  background: linear-gradient(to right, transparent 50%, white 50%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+  transition: all 0.3s; 
+  background-color: black;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position:relative;
+}
+.navbar > ul li a::after{
+  content: "";
+  z-index: -1;
+  position: absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  background: linear-gradient(to right, transparent 51%, black 49%);
+  background-size: 200% 100%;
+  background-position:left bottom;
+  transition: all 0.3s; 
+  
+}
+.navbar > ul li a:hover,
+.navbar > ul li a:hover::after{
+  background-position:right bottom;
+}
+
