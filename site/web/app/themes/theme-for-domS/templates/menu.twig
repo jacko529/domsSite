@@ -1,7 +1,7 @@
 
 {% if menu %}
 
-	<ul>
+	<ul style="display:flex">
 	{% for item in menu %}
 		<li class="{{ item.classes | join(' ') }}">
 			<a 
@@ -34,6 +34,7 @@
 				</li>
 			{% endfor %}
 		</ul>
+		</div>
 {% endif %}
 
 
