@@ -151,13 +151,7 @@ body {
   font-size: 100%;
   font-family: "Corporate S W01";
 }
-.bottom-blog {
-  position: absolute;
-  top: 77%;
-  padding-left: 4px;
-  color: var(--main-txt-color);
-  background-color: var(--main-bg-color);
-  }
+
   
   .navbar-nav > li a {
     text-decoration: none;
@@ -665,7 +659,13 @@ color: var(--main-txt-color);
 background-color: var(--main-bg-color);
 }
 
-
+.bottom-blog {
+  position: absolute;
+  top: 77%;
+  padding-left: 4px;
+  color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
+  }
 @media (max-width: 1000px){
 
   .hamburger:hover,
