@@ -9,6 +9,9 @@ body, html{
     overflow-x:hidden;
 
 }
+#content{
+  margin-top: 10%;
+}
 .nav-link::after{
   content: "";
   z-index: -1;
@@ -113,7 +116,7 @@ img {
 
 .parallax {
   /* The image used */
-  background-image: url("imgs/Emma-Mumford-Photoshoot-59.jpg");
+  background-image: url("imgs/working-out.jpg");
 
   /* Set a specific height */
   min-height: 500px; 
@@ -575,13 +578,13 @@ body {
   justify-content: center;
   padding: 1rem;
   color: var(--main-txt-color);
-  background-color: var(--main-color);
+  background-color: var(--main-bg-color);
 }
 .quoteNow{
   display: flex;
   justify-content: center;
   color: var(--main-color);
-  background-color: var(--main-txt-color);
+  background-color: var(--main-bg-color);
 }
 .hamburger{
   display: none!important;
@@ -611,7 +614,7 @@ body {
   padding-left: 4px;
   font-size: 30px;
   color: var(--main-txt-color);
-  background-color: var(--main-color);
+  background-color: var(--main-bg-color);
 }
 #hero {
   position: relative;
