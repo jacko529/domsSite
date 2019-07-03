@@ -6,6 +6,7 @@ jQuery( document ).ready( function( $ ) {
 
 
   $('.hamburger').click(function(){
+    alert(hello);
     $(this).toggleClass('is-active')
     if ($(this).hasClass('is-active')){
       $('.overlay').addClass('is-open no-delay translate').removeClass('delay')
